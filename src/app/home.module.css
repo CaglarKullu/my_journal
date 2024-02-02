@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+
+.container {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2; /* Behind overlay */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for text contrast */
+  z-index: -1; /* Above the background image */
+}
+
+.title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #FFF;
+  margin-bottom: 1rem;
+  z-index: 1;
+}
+
+.description {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25rem;
+  color: #FFF;
+  margin-bottom: 2rem;
+  z-index: 1;
+}
+
+.cta {
+  font-size: 1rem;
+  color: white;
+  background-color: #008080;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  z-index: 1;
+}
+
+.cta:hover {
+  background-color: #006666; /* Manually selected darker teal */
+}
+
+.features {
+  padding: 4rem 3rem 0 2rem;
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.featureCard {
+  padding: 2rem;
+  text-align: left;
+  color: var(--text-color, #5C4033); /* Utilizing the global variable for text color */
+  background-color: #FFF;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+}
+
+.footer {
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+  border-top: 1px solid #eaeaea;
+  margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .featuresGrid {
+    grid-template-columns: 1fr;
+  }
+}
