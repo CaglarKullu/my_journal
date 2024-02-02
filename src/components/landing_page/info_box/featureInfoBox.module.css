@@ -1,0 +1,33 @@
+.infoBoxOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10; /* Ensure it's above other content */
+  }
+  
+  .infoBox {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    z-index: 11;
+  }
+  
+  .closeButton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #008080; /* Teal, matching your button styles */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

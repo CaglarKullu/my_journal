@@ -19,9 +19,10 @@ const Home: React.FC = () => {
         <p className={styles.description}>
           Capture your tasks, notes, and events all in one beautifully organized place.
         </p>
-        <Link className={styles.cta} href="/signup">
-          Get Started
-        </Link>
+        <div className={styles.ctaSection}>
+  <p className={styles.ctaText}>Ready to take your journaling to the next level?</p>
+  <Link  className={styles.ctaButton} href="/signup">Get Started For Free</Link>
+</div>
       </div>
     </div>
       {/* Features section */}

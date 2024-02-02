@@ -51,23 +51,42 @@
   z-index: 1;
 }
 
-.cta {
-  font-size: 1rem;
-  color: white;
-  background-color: #008080;
+/* New styles for the dedicated CTA section */
+.ctaSection {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.ctaText {
+  margin-bottom: 1rem;
+  font-size: 1.5rem; /* Retains a larger, readable size */
+  color: #FFFFFF; /* Switches to white for better visibility on darker backgrounds */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Enhances text shadow for depth and readability */
+  font-weight: bold; /* Keeps the text bold for emphasis */
+}
+
+.cta, .ctaButton {
+  font-size: 1.25rem;
+  color: white; /* Ensures high contrast against the teal background */
+  background-color: #008080; /* Teal background */
   border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
+  border-radius: 8px;
+  padding: 15px 30px;
   cursor: pointer;
   text-decoration: none;
-  transition: background-color 0.3s ease;
-  z-index: 1;
+  transition: transform 0.2s ease-out, background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds shadow to text for better readability */
 }
 
-.cta:hover {
-  background-color: #006666; /* Manually selected darker teal */
+.cta:hover, .cta:focus, .ctaButton:hover {
+  background-color: #006666; /* Darker shade of teal for hover/focus */
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/* Features section */
 .features {
   padding: 4rem 3rem 0 2rem;
 }
