@@ -1,0 +1,14 @@
+.container {
+    overflow: hidden;
+    z-index: 3;
+  }
+
+.features {
+    padding: 4rem 3rem 0 2rem;
+  }
+  
+  .featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }

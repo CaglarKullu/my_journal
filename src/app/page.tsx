@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import styles from './home.module.css';
 import Image from 'next/image';
+import Features from '../components/landing_page/feature_section/Features';
 
 const Home: React.FC = () => {
   return (
@@ -21,28 +22,15 @@ const Home: React.FC = () => {
         </p>
         <div className={styles.ctaSection}>
   <p className={styles.ctaText}>Ready to take your journaling to the next level?</p>
-  <Link  className={styles.ctaButton} href="/signup">Get Started For Free</Link>
+  <Link  className={styles.ctaButton} href="/journal">Get Started For Free</Link>
 </div>
       </div>
     </div>
       {/* Features section */}
+      
         <section className={styles.features}>
           <h2>Features</h2>
-          <div className={styles.featuresGrid}>
-            {/* Feature cards */}
-            <div className={styles.featureCard}>
-              <h3>Daily Logs</h3>
-              <p>Track your daily activities with ease.</p>
-            </div>
-            <div className={styles.featureCard}>
-              <h3>Monthly Overview</h3>
-              <p>Get a bird's-eye view of your month.</p>
-            </div>
-            <div className={styles.featureCard}>
-              <h3>Customization</h3>
-              <p>Make it truly yours with customizable themes.</p>
-            </div>
-          </div>
+          <Features />
         </section>
       </main>
 

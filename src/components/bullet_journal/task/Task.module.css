@@ -1,0 +1,21 @@
+/* Task.module.css */
+.task {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  position: relative;
+}
+
+.taskText {
+  flex: 1;
+  text-decoration: none; /* Default state: no text decoration */
+}
+
+.checked .taskText {
+  text-decoration: line-through; /* Apply line-through when task is checked */
+}
+
+.checkbox {
+  margin-left: 8px;
+  order: 2; /* Ensure checkbox appears to the right */
+}

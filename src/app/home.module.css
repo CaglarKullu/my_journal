@@ -91,26 +91,7 @@
   padding: 4rem 3rem 0 2rem;
 }
 
-.featuresGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1.5rem;
-}
 
-.featureCard {
-  padding: 2rem;
-  text-align: left;
-  color: var(--text-color, #5C4033); /* Utilizing the global variable for text color */
-  background-color: #FFF;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.featureCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 15px rgba(0,0,0,0.2);
-}
 
 .footer {
   width: 100%;
